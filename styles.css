@@ -1,0 +1,102 @@
+body {
+    background-color: #deded8;
+    color: #eeeeea;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(80, 80, 70, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(80, 80, 70, 0.08) 1px, transparent 1px),
+        radial-gradient(circle at 20% 20%, rgba(182, 155, 76, 0.18), transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(80, 80, 70, 0.12), transparent 30%);
+
+    background-size: 35px 35px, 35px 35px, 100% 100%, 100% 100%;
+
+.container {
+    background-color: #191a18;
+    width: 600px;
+    padding: 45px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #8f7a3d;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.container:before {
+    content: "EUROPE // COUNTRY DATABASE";
+    display: block;
+    color: #8f7a3d;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #d4b85a;
+    font-size: 32px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #d0d0ca;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+p {
+    color: #999b95;
+    line-height: 1.7;
+}
+
+select {
+    padding: 13px;
+    width: 70%;
+    background-color: #252623;
+    color: #e5e5df;
+    border: 1px solid #55574f;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #b69b4c;
+}
+
+button {
+    margin-top: 18px;
+    padding: 13px 22px;
+    background-color: #b69b4c;
+    color: #191a18;
+    border: none;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #d4b85a;
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #20211f;
+    color: #d4b85a;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid #65562e;
+    border-radius: 7px;
+    box-shadow: inset 0 0 15px rgba(180, 150, 60, 0.05);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles.css">
+    <title>The Nickname Atlas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>The Nickname Atlas of Europe</h1>
+        <p>Every country in Europe has a nickname. Select a country to discover its nickname.</p>
+
+        <h2>Enter a European Country</h2>
+        <select id="european_countries">
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Romania">Romania</option>
+            <option value="Russia">Russia</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Netherlands">Netherlands</option>
+        </select>
+
+        <button py-click="get_nickname">REVEAL NICKNAME</button>
+        <div id="result"></div>
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
